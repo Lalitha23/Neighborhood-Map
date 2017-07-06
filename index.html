@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Trirong" rel="stylesheet">
+      <title>Neighborhood Map</title>
+    </head>
+    <body>
+       <div class="container">
+         <aside>
+            <div class="side-bar col-md-3 col-sm-12">
+              <header>US Map</header>
+              <p>Map showing some of United States National Parks in different states. Click on the markers to see details.</p>
+              <br>
+              <div class="toggleListings">
+                    <input id="show-listings" type="button" value="Show Listings" class="btn" data-bind=" click: showListings">
+                    <input id="hide-listings" type="button" value="Hide Listings" class="btn" data-bind=" click: hideListings">
+              </div>
+              <br>
+              <article>
+                  <input placeholder="ex:Yellowstone" type="search" data-bind="textInput: query"><br>
+                  <div id="SearchList">
+                      <ul class="list-group" data-bind="foreach: json">
+                          <li class="list-group-item" data-bind="text: title, click: $parent.selectPlace"></li>
+                      </ul>
+                  </div>
+
+                  <br>
+              </article>
+            </div>
+          </aside>
+         <section>
+           <div id="map" class="col-md-9 col-sm-12"></div>
+         </section>
+       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+       <script src="js/map.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+       <script async defer
+           src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCE7V7ryFcVUIxh2XHiigzStcn6lqBzBek&libraries=drawing,geometry&v=&callback=createMap" onerror="ErrorHandler()"></script>
+    </body>
+</html>

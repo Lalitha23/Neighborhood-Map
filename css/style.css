@@ -1,0 +1,78 @@
+
+html,
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-weight: bolder;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow:scroll;
+}
+
+header {
+  color: #525454;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  overflow: scroll;
+}
+p{
+  font-size: 15px;
+  text-align: center;
+  width: 85%;
+  overflow: scroll;
+
+}
+
+#toggle-drawing {
+  width: 27%;
+  position: relative;
+  margin-left: 10px;
+}
+
+#hide-listings,
+#show-listings {
+  width: 40%;
+  overflow: scroll;
+}
+
+#map {
+  bottom:0px;
+  height: 100%;
+  left: 26%;
+  position: absolute;
+  right: 0px;
+}
+
+.side-bar {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  height: 100%;
+  padding: 10px 10px 30px 10px;
+  text-align: left;
+  width: 28%;
+}
+
+#SearchList {
+  height: 250px;
+  width: 82%;
+  overflow: scroll;
+  font-size: 15px;
+  text-align: center;
+}
+
+input {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 2px;
+  width: 82%;
+  overflow: scroll;
+}
+
+#marker-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Times New Roman", Georgia, Serif;
+}
