@@ -22,7 +22,7 @@
               <article>
                   <input placeholder="ex:Yellowstone" type="search" data-bind="textInput: query"><br>
                   <div id="SearchList">
-                      <ul class="list-group" data-bind="foreach: json">
+                      <ul class="list-group" data-bind="foreach: search()">
                           <li class="list-group-item" data-bind="text: title, click: $parent.selectPlace"></li>
                       </ul>
                   </div>
