@@ -19,4 +19,3 @@ Clone this project and open index.html in browser
 ## To Do:
 
 * Dynamically adding JSON data 
-* Enable click in list view
